@@ -1,6 +1,4 @@
 import Input from '../components/Input'
-import Button from '../components/button'
-import Header from '../components/header'
 
 export default function Login() {
 	return (
@@ -8,7 +6,7 @@ export default function Login() {
 			{/* <Header /> */}
 			<div className='flex'>
 				<div className='h-screen  w-1/2'>
-					<img src='https://main.d3kaistnyhy60t.amplifyapp.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogin-cover.fc484909.png&w=3840&q=75' className='w-full h-full'/>
+					<img src='https://main.d3kaistnyhy60t.amplifyapp.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogin-cover.fc484909.png&w=3840&q=75' className='w-full h-full' alt=''/>
 				</div>
 				<div className='w-1/2 h-screen flex  justify-center items-center'>
 					<form className='max-w-[400px] w-full p-10 '>

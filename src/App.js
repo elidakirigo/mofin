@@ -13,7 +13,7 @@ import ChangeHistory from './pages/ChangeHistory'
 import { useState } from 'react'
 
 function App() {
-	const [user, setUser] = useState(true)
+	const [user] = useState(true)
 	return (
 		<BrowserRouter>
 			<Routes>

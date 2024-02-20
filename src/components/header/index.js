@@ -6,7 +6,7 @@ export default function Header() {
 		<div className='border-b-[1px] p-5 w-full flex justify-between shadow '>
 			<div className='flex justify-center items-center gap-3'>
 				<Logo />
-				<img src='https://static.vecteezy.com/system/resources/previews/000/574/512/original/vector-sign-of-user-icon.jpg' className='w-[50px] h-[50px]' />
+				<img src='https://static.vecteezy.com/system/resources/previews/000/574/512/original/vector-sign-of-user-icon.jpg' className='w-[50px] h-[50px]' alt='' />
 				<div>
 					<h1>Director Manager</h1>
 					<span className=''>Elida wanjiku</span>
@@ -20,11 +20,10 @@ export default function Header() {
 				</div>
 				<div className='flex justify-center items-center'>
 					<div className='p-3'>
-							<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
-						<path strokeLinecap='round' strokeLinejoin='round' d='m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z' />
-					</svg>
+						<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
+							<path strokeLinecap='round' strokeLinejoin='round' d='m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z' />
+						</svg>
 					</div>
-				
 
 					<Input />
 				</div>
