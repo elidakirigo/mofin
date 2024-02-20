@@ -3,3 +3,7 @@
 	--primary-blue: #2a3958;
 	--secondary-blue: #6f80a0;
 }
+
+*{
+	font-family: 'Poppins',Arial, Helvetica, sans-serif;
+}
