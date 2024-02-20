@@ -8,7 +8,7 @@ react-table - https://www.freakyjolly.com/react-table-tutorial/
 
 - npm install -D tailwindcss 
 
-- npm install npm install --save react-router-dom react-pro-sidebar  @heroicons/react @faker-js/faker @tanstack/react-table @tanstack/match-sorter-utils xlsx react-date-range  react date-fns
+- npm install npm install --save react-router-dom react-pro-sidebar  @heroicons/react @faker-js/faker @tanstack/react-table @tanstack/match-sorter-utils xlsx react-date-range  react date-fns antd moment
 
 
 - npx tailwindcss init
