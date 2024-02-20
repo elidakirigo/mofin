@@ -47,11 +47,9 @@ export default function SidebarComponent() {
 					icon={<ArrowRight />}>
 					<div style={{ maxWidth: '80%' }}>
 						<Logo />
-					</div>
-
-					<ArrowRight />
+					</div> 
 				</MenuItem>
-				<MenuItem component={<Link to='/' />}> Dashboard</MenuItem>
+				<MenuItem > Dashboard</MenuItem>
 				<MenuItem component={<Link to='/membershipManagement' />}> Membership Management</MenuItem>
 				<MenuItem component={<Link to='/businessManagement' />}> Business Management</MenuItem>
 				<MenuItem component={<Link to='/fundingManagement' />}> Funding Management</MenuItem>

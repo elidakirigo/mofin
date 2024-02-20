@@ -1,4 +1,5 @@
+import Card from '../components/Card'
 
 export default function PaymentManagement() {
-  return <div>PaymentManagement</div>
+	return <Card content={'Payment Management'} />
 }

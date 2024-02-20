@@ -1,4 +1,5 @@
+import Card from '../components/Card'
 
 export default function FundingManagement() {
-  return <div>FundingManagement</div>
+	return <Card content={'Funding Management'} />
 }

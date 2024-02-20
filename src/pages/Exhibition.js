@@ -1,8 +1,5 @@
+import Card from '../components/Card'
 
 export default function Exhibition() {
-  return (
-	<div>
-	  
-	</div>
-  )
+	return <Card content={'Exhibition'} />
 }

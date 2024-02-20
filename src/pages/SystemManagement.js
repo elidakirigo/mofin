@@ -1,8 +1,7 @@
+import Card from "../components/Card";
 
 export default function SystemManagement() {
   return (
-	<div>
-	  
-	</div>
+	<Card content={'System Management'}/>
   )
 }

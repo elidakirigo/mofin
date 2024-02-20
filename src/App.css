@@ -4,6 +4,23 @@
 	--secondary-blue: #6f80a0;
 }
 
-*{
-	font-family: 'Poppins',Arial, Helvetica, sans-serif;
+* {
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+/* .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
+}
+.calendar {
+	padding: 20px;
+	border: 2px solid gray;
+	cursor: pointer;
+} */
+.dateRange {
+	position: absolute;
+	top: 120px;
 }

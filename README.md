@@ -8,7 +8,9 @@ react-table - https://www.freakyjolly.com/react-table-tutorial/
 
 - npm install -D tailwindcss 
 
-- npm install react-router-dom react-pro-sidebar  @heroicons/react @faker-js/faker @tanstack/react-table @tanstack/match-sorter-utils xlsx
+- npm install npm install --save react-router-dom react-pro-sidebar  @heroicons/react @faker-js/faker @tanstack/react-table @tanstack/match-sorter-utils xlsx react-date-range  react date-fns
+
+
 - npx tailwindcss init
 
 https://blog.logrocket.com/creating-responsive-sidebar-react-pro-sidebar-mui/

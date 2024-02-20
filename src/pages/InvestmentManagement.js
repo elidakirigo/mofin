@@ -1,5 +1,6 @@
 import React from 'react'
+import Card from '../components/Card'
 
 export default function InvestmentManagement() {
-  return <div>InvestmentManagement</div>
+  return <Card content={'Investment Management'}/>
 }

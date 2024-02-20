@@ -1,4 +1,5 @@
+import Card from '../components/Card'
 
 export default function RecievablesManagement() {
-  return <div>RecievablesManagement</div>
+	return <Card content={'Recievables Management'} />
 }

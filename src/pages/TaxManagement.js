@@ -1,4 +1,5 @@
+import Card from '../components/Card'
 
 export default function TaxManagement() {
-  return <div>TaxManagement</div>
+	return <Card content={'Tax Management'} />
 }

@@ -1,4 +1,5 @@
+import Card from "../components/Card";
 
 export default function BusinessManagement() {
-  return <div>BusinessManagement</div>
+  return <Card content={'Business Management'}/>
 }

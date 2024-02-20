@@ -3,11 +3,12 @@ import { USERS } from '../../components/data'
 import { useState } from 'react'
 import DownloadBtn from './DownloadBtn'
 import DebouncedInput from './DebouncedInput'
+import SearchIcon from '../../components/svg/SearchIcon'
 
 const TanStackTable = () => {
 	// const [data, setData] = useState([...USERS])
-	const [data] = useState(() =>[ ...USERS])
-	const [globalFilter] = useState('')
+	const [data] = useState(() => [...USERS])
+	const [globalFilter, setGlobalFilter] = useState('')
 
 	const columnHelper = createColumnHelper()
 	const columns = [
@@ -56,8 +57,12 @@ const TanStackTable = () => {
 	return (
 		<div className='p-2 max-w-5xl mx-auto text-white fill-gray-400'>
 			{/* {JSON.stringify(USERS)} */}
-			<div className='flex justify-between mb-3'>
-				<DebouncedInput />
+			<div className='flex justify-between items-center mb-3'>
+				<div className='w-1/2 flex items-center gap-1'>
+					<SearchIcon />
+					<DebouncedInput value={globalFilter ?? ''} onChange={(value) => setGlobalFilter(String(value))} className='p-2 bg-transparent outline-none border-b-2 w-2/3 focus:w-full duration-300 border-indigo-500' placeholder='Search all columns' />
+				</div>
+
 				<DownloadBtn data={data} fileName={'Users'} />
 			</div>
 
@@ -84,7 +89,8 @@ const TanStackTable = () => {
 									))}
 								</tr>
 						  ))
-						: null}
+						: <tr className='text-center h-32'>
+							<td colSpan={12}>No Records found</td></tr>}
 				</tbody>
 			</table>
 			{/* pagination */}
