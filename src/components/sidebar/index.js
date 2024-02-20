@@ -12,7 +12,7 @@ export default function SidebarComponent() {
 
 	return (
 		<Sidebar
-			style={{ height: '100vh', backgroundColor: 'red' }}
+			className='h-full bg-black'
 			rootStyles={
 				{
 					// [`.${sidebarClasses.container}`]: {
