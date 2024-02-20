@@ -60,14 +60,14 @@ const TanStackTable = () => {
 			<div className='flex justify-between items-center mb-3'>
 				<div className='w-1/2 flex items-center gap-1'>
 					<SearchIcon />
-					<DebouncedInput value={globalFilter ?? ''} onChange={(value) => setGlobalFilter(String(value))} className='p-2 bg-transparent outline-none border-b-2 w-2/3 focus:w-full duration-300 border-indigo-500' placeholder='Search all columns' />
+					<DebouncedInput value={globalFilter ?? ''} onChange={(value) => setGlobalFilter(String(value))} className='p-2 bg-transparent outline-none border-b-2 w-2/3 focus:w-full duration-300 border-[#2a3958]' placeholder='Search all columns' />
 				</div>
 
-				<DownloadBtn data={data} fileName={'Users'} />
+				<DownloadBtn data={data} fileName={'Users'} disabled={!table.getRowModel().rows.length} />
 			</div>
 
 			<table className=' w-full text-left rounded'>
-				<thead className='bg-indigo-600 '>
+				<thead className='bg-[#2a3958] '>
 					{HeaderGroups.map((headerGroup) => (
 						<tr key={headerGroup.id}>
 							{headerGroup.headers.map((header) => (
@@ -78,19 +78,22 @@ const TanStackTable = () => {
 						</tr>
 					))}
 				</thead>
-				<tbody>
-					{table.getRowModel().rows.length
-						? table.getRowModel().rows.map((row, i) => (
-								<tr key={row.id} className={`${i % 2 === 0 ? 'bg-gray-900' : 'bg-gray-800'}`}>
-									{row.getVisibleCells().map((cell) => (
-										<td key={cell.id} className='px-3.5 py-2'>
-											{flexRender(cell.column.columnDef.cell, cell.getContext())}
-										</td>
-									))}
-								</tr>
-						  ))
-						: <tr className='text-center h-32'>
-							<td colSpan={12}>No Records found</td></tr>}
+				<tbody className='text-[#2a3958]'>
+					{table.getRowModel().rows.length ? (
+						table.getRowModel().rows.map((row, i) => (
+							<tr key={row.id} className={`${i % 2 === 0 ? 'bg-slate-100' : 'bg-slate-200'} `}>
+								{row.getVisibleCells().map((cell) => (
+									<td key={cell.id} className='px-3.5 py-2'>
+										{flexRender(cell.column.columnDef.cell, cell.getContext())}
+									</td>
+								))}
+							</tr>
+						))
+					) : (
+						<tr className='text-center h-32'>
+							<td colSpan={12}>No Records found</td>
+						</tr>
+					)}
 				</tbody>
 			</table>
 			{/* pagination */}
@@ -99,13 +102,13 @@ const TanStackTable = () => {
 					onClick={() => {
 						table.previousPage()
 					}}
-					className='p-1 border border-gray-300 px-2 disabled:opacity-30 rounded-xl'
+					className='p-1 border border-[#2a3958] text-[#2a3958] px-2 disabled:opacity-30 rounded-xl'
 					disabled={!table.getCanPreviousPage()}>
 					<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
 						<path strokeLinecap='round' strokeLinejoin='round' d='M15.75 19.5 8.25 12l7.5-7.5' />
 					</svg>
 				</button>
-				<span className='flex items-center gap-1'>
+				<span className='flex items-center gap-1 text-[#2a3958]'>
 					<div>Page</div>
 					<strong>
 						{table.getState().pagination.pageIndex + 1} of {table.getPageCount()}
@@ -116,19 +119,19 @@ const TanStackTable = () => {
 					onClick={() => {
 						table.nextPage()
 					}}
-					className='p-1 border border-gray-300 px-2 disabled:opacity-30 rounded-xl'
+					className='p-1 border border-[#2a3958] px-2 disabled:opacity-30 rounded-xl text-[#2a3958]'
 					disabled={!table.getCanNextPage()}>
 					<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' className='w-6 h-6'>
 						<path strokeLinecap='round' strokeLinejoin='round' d='m8.25 4.5 7.5 7.5-7.5 7.5' />
 					</svg>
 				</button>
-				<span className='flex items-center gap-1 '>
+				<span className='flex items-center gap-1 text-[#2a3958] '>
 					| Go to page:
 					<input
 						type='number'
 						defaultValue={table.getState().pagination.pageIndex + 1}
 						disabled={table.getState().pagination.pageIndex < 0}
-						className='border p-1 rounded-xl w-16 bg-transparent'
+						className='border p-1 rounded-xl w-16 bg-transparent border-[#2a3958] text-[#2a3958]'
 						onChange={(e) => {
 							const page = e.target.value ? Number(e.target.value) - 1 : 0
 							table.setPageIndex(page)
@@ -140,7 +143,7 @@ const TanStackTable = () => {
 					onChange={(e) => {
 						table.setPageSize(Number(e.target.value))
 					}}
-					className='p-2 bg-gray-300 w-30 border-[1px] rounded-xl border-gray-100 text-black'>
+					className='p-2 bg-[#2a3958] w-30 border-[1px] rounded-xl border-[#2a3958] text-[#fff]'>
 					{[5, 10, 20, 30, 50].map((pageSize) => (
 						<option key={pageSize} value={pageSize} className='bg-transparent'>
 							show {pageSize}

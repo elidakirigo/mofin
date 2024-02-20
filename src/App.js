@@ -20,7 +20,7 @@ function App() {
 			<Routes>
 				<Route path='/login' element={user ? <Navigate to='/membershipManagement' /> : <Login />}></Route>
 				<Route path='/' element={!user ? <Navigate to='/login' /> : <Dashboard />}>
-					<Route path='/membershipManagement' element={<MembershipManagement />}></Route>
+					<Route path={`${/membershipManagement || / ? <MembershipManagement /> : <Dashboard />}`} element={<MembershipManagement />}></Route>
 					<Route path='/businessManagement' element={<BusinessManagement />}></Route>
 					<Route path='/fundingManagement' element={<FundingManagement />}></Route>
 					<Route path='/investmentManagement' element={<InvestmentManagement />}></Route>

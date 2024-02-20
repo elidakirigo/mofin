@@ -2,7 +2,8 @@ import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sideb
 import { Link } from 'react-router-dom'
 import ArrowRight from '../svg/arrowRight'
 import Logo from '../logo'
-// import { useState } from 'react'
+import HomeIcon from '../svg/Home'
+import UserIcon from '../svg/UserIcon'
 
 export default function SidebarComponent() {
 	const { collapseSidebar } = useProSidebar()
@@ -12,7 +13,7 @@ export default function SidebarComponent() {
 
 	return (
 		<Sidebar
-			className='h-full bg-black'
+			className='h-full bg-[#2a3958]'
 			rootStyles={
 				{
 					// [`.${sidebarClasses.container}`]: {
@@ -47,21 +48,48 @@ export default function SidebarComponent() {
 					icon={<ArrowRight />}>
 					<div style={{ maxWidth: '80%' }}>
 						<Logo />
-					</div> 
+					</div>
 				</MenuItem>
-				<MenuItem > Dashboard</MenuItem>
-				<MenuItem component={<Link to='/membershipManagement' />}> Membership Management</MenuItem>
-				<MenuItem component={<Link to='/businessManagement' />}> Business Management</MenuItem>
-				<MenuItem component={<Link to='/fundingManagement' />}> Funding Management</MenuItem>
-				<MenuItem component={<Link to='/investmentManagement' />}> Investment Management</MenuItem>
-				<MenuItem component={<Link to='/recievableManagement' />}> Recievable Management</MenuItem>
-				<MenuItem component={<Link to='/taxManagement' />}> Tax Management</MenuItem>
-				<MenuItem component={<Link to='/paymentManagement' />}> Payment Management</MenuItem>
-				<MenuItem component={<Link to='/changehistory' />}> change history</MenuItem>
-				<MenuItem component={<Link to='/exhibition' />}> exhibition</MenuItem>
-				<SubMenu label='System Management'>
-					<MenuItem> Pie charts </MenuItem>
-					<MenuItem> Line charts </MenuItem>
+				<MenuItem icon={<HomeIcon />}> Dashboard</MenuItem>
+				<MenuItem icon={<UserIcon />} component={<Link to='/membershipManagement' />}>
+					{' '}
+					Membership Management
+				</MenuItem>
+				<MenuItem icon={<UserIcon />} component={<Link to='/businessManagement' />}>
+					{' '}
+					Business Management
+				</MenuItem>
+				<MenuItem icon={<UserIcon />} component={<Link to='/fundingManagement' />}>
+					{' '}
+					Funding Management
+				</MenuItem>
+				<MenuItem icon={<UserIcon />} component={<Link to='/investmentManagement' />}>
+					{' '}
+					Investment Management
+				</MenuItem>
+				<MenuItem icon={<UserIcon />} component={<Link to='/recievableManagement' />}>
+					{' '}
+					Recievable Management
+				</MenuItem>
+				<MenuItem icon={<UserIcon />} component={<Link to='/taxManagement' />}>
+					{' '}
+					Tax Management
+				</MenuItem>
+				<MenuItem icon={<UserIcon />} component={<Link to='/paymentManagement' />}>
+					{' '}
+					Payment Management
+				</MenuItem>
+				<MenuItem icon={<UserIcon />} component={<Link to='/changehistory' />}>
+					{' '}
+					change history
+				</MenuItem>
+				<MenuItem icon={<UserIcon />} component={<Link to='/exhibition' />}>
+					{' '}
+					exhibition
+				</MenuItem>
+				<SubMenu icon={<UserIcon />} label='System Management'>
+					<MenuItem icon={<UserIcon />}> Pie charts </MenuItem>
+					<MenuItem icon={<UserIcon />}> Line charts </MenuItem>
 				</SubMenu>
 			</Menu>
 		</Sidebar>

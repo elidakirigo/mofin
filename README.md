@@ -24,3 +24,7 @@ notion file - https://mustfintech.notion.site/Find-React-Developer-v1-1-0-4fb9af
 router documentation - https://www.digitalocean.com/community/tutorials/how-to-handle-routing-in-react-apps-with-react-router
 
 site demo - https://main.d3kaistnyhy60t.amplifyapp.com/dashboard/member-management
+
+tanstack - https://tanstack.com/table/latest/docs/guide/tables
+
+checkbox guide - https://www.freecodecamp.org/news/how-to-work-with-multiple-checkboxes-in-react/
