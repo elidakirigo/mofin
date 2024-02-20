@@ -7,7 +7,7 @@ import DebouncedInput from './DebouncedInput'
 const TanStackTable = () => {
 	const [data, setData] = useState([...USERS])
 	// const [data] = useState(() =>[ ...USERS])
-	const [globalFilter, setGlobalFilter] = useState(' ')
+	const [globalFilter, setGlobalFilter] = useState('')
 
 	const columnHelper = createColumnHelper()
 	const columns = [
