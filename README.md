@@ -4,6 +4,8 @@ site's link https://mofin-react.netlify.app/
 
 figma - https://www.figma.com/file/39BD1p2kGVFCcTxcuUAJwb/HTML-CSS-perfection?type=design&node-id=1-380&mode=design&t=JhmJ04cC2XYHXARI-0
 
+react-table - https://www.freakyjolly.com/react-table-tutorial/
+
 - npm install -D tailwindcss
 
 - npx tailwindcss init
