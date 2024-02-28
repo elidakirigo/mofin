@@ -6,6 +6,7 @@ figma - https://www.figma.com/file/39BD1p2kGVFCcTxcuUAJwb/HTML-CSS-perfection?ty
 
 react-table - https://www.freakyjolly.com/react-table-tutorial/
 
-- npm install -D tailwindcss
+- npm install -D tailwindcss 
 
+- npm install react-router-dom
 - npx tailwindcss init

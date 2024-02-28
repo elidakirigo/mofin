@@ -1,5 +1,5 @@
 import Header from "../../components/header";
 
 export default function Dashboard() {
-	return <Header/>
+	return <div>dashboard</div>
 }
