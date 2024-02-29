@@ -8,5 +8,5 @@ react-table - https://www.freakyjolly.com/react-table-tutorial/
 
 - npm install -D tailwindcss 
 
-- npm install react-router-dom
+- npm install react-router-dom react-pro-sidebar  dotenv 
 - npx tailwindcss init
