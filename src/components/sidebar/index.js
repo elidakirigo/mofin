@@ -13,11 +13,13 @@ export default function SidebarComponent() {
 	return (
 		<Sidebar
 			style={{ height: '100vh', backgroundColor: 'red' }}
-			rootStyles={{
-				// [`.${sidebarClasses.container}`]: {
-				// 	backgroundColor: 'red',
-				// },
-			}}>
+			rootStyles={
+				{
+					// [`.${sidebarClasses.container}`]: {
+					// 	backgroundColor: 'red',
+					// },
+				}
+			}>
 			<Menu
 				menuItemStyles={{
 					button: {
@@ -33,6 +35,8 @@ export default function SidebarComponent() {
 						// flexWrap:'wrap',
 						justifyContent: 'space-between',
 						alignItems: 'center',
+						fontSize: '20px',
+						textTransform: 'capitalize',
 					},
 				}}>
 				<MenuItem
@@ -42,19 +46,25 @@ export default function SidebarComponent() {
 					}}
 					icon={<ArrowRight />}>
 					<div style={{ maxWidth: '80%' }}>
-						<Logo/>
+						<Logo />
 					</div>
 
 					<ArrowRight />
 				</MenuItem>
-				<MenuItem component={<Link to='/calendar' />}> Calendar</MenuItem>
-				<MenuItem component={<Link to='/e-commerce' />}> E-commerce</MenuItem>
-				<SubMenu label='Charts'>
+				<MenuItem component={<Link to='/' />}> Dashboard</MenuItem>
+				<MenuItem component={<Link to='/membershipManagement' />}> Membership Management</MenuItem>
+				<MenuItem component={<Link to='/businessManagement' />}> Business Management</MenuItem>
+				<MenuItem component={<Link to='/fundingManagement' />}> Funding Management</MenuItem>
+				<MenuItem component={<Link to='/investmentManagement' />}> Investment Management</MenuItem>
+				<MenuItem component={<Link to='/recievableManagement' />}> Recievable Management</MenuItem>
+				<MenuItem component={<Link to='/taxManagement' />}> Tax Management</MenuItem>
+				<MenuItem component={<Link to='/paymentManagement' />}> Payment Management</MenuItem>
+				<MenuItem component={<Link to='/changehistory' />}> change history</MenuItem>
+				<MenuItem component={<Link to='/exhibition' />}> exhibition</MenuItem>
+				<SubMenu label='System Management'>
 					<MenuItem> Pie charts </MenuItem>
 					<MenuItem> Line charts </MenuItem>
 				</SubMenu>
-				<MenuItem> Documentation </MenuItem>
-				<MenuItem> Calendar </MenuItem>
 			</Menu>
 		</Sidebar>
 	)

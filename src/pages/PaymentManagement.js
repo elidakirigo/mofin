@@ -1,8 +1,4 @@
 
 export default function PaymentManagement() {
-  return (
-	<div>
-	  
-	</div>
-  )
+  return <div>PaymentManagement</div>
 }

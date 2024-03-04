@@ -1,8 +1,4 @@
 
 export default function ChangeHistory() {
-  return (
-	<div>
-	  
-	</div>
-  )
+  return <div>ChangeHistory</div>
 }

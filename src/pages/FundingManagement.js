@@ -1,8 +1,4 @@
 
 export default function FundingManagement() {
-  return (
-	<div>
-	  
-	</div>
-  )
+  return <div>FundingManagement</div>
 }

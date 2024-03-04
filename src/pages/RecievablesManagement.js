@@ -1,8 +1,4 @@
 
 export default function RecievablesManagement() {
-  return (
-	<div>
-	  
-	</div>
-  )
+  return <div>RecievablesManagement</div>
 }

@@ -1,8 +1,4 @@
 
 export default function BusinessManagement() {
-  return (
-	<div>
-	  
-	</div>
-  )
+  return <div>BusinessManagement</div>
 }
