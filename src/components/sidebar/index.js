@@ -1,30 +1,55 @@
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar'
+import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sidebar'
 import { Link } from 'react-router-dom'
+import ArrowLeft from '../svg/arrowLeft'
+import ArrowRight from '../svg/arrowRight'
+import { useState } from 'react'
 
 export default function SidebarComponent() {
-	return (
-		<Sidebar>
-			<Menu>
-				<Menu
-					menuItemStyles={{
-						button: {
-							backgroundColor: 'var(--primary-blue)',
-							color: '#fff',
-							// the active class will be added automatically by react router
-							// so we can use it to style the active menu item
+	const { collapseSidebar } = useProSidebar()
+	// return <div id='app' style={({ height: '100vh' }, { display: 'flex' })}></div>
+	const [arrowToggle, setArrowToggle] = useState(false)
 
-							[`&.active`]: {
-								backgroundColor: '#13395e',
-								color: '#b6c8d9',
-							},
-						},
-					}}>
-					<MenuItem component={<Link to='/documentation' />}>
-						<img src={process.env.REACT_APP_SITE_LOGO} />
-					</MenuItem>
-					<MenuItem component={<Link to='/calendar' />}> Calendar</MenuItem>
-					<MenuItem component={<Link to='/e-commerce' />}> E-commerce</MenuItem>
-				</Menu>
+	const toggleArrow = () => {}
+
+	return (
+		<Sidebar
+			style={{ height: '100vh', backgroundColor: 'red' }}
+			rootStyles={{
+				[`.${sidebarClasses.container}`]: {
+					backgroundColor: 'red',
+				},
+			}}>
+			<Menu
+				menuItemStyles={{
+					button: {
+						color: '#fff',
+
+						// [`&.active`]: {
+						// 	backgroundColor: '#13395e',
+						// 	color: '#b6c8d9',
+						// },
+					},
+					label: {
+						display: 'flex',
+						// flexWrap:'wrap',
+						justifyContent: 'space-between',
+						alignItems: 'center',
+					},
+				}}>
+				<MenuItem
+					onClick={() => {
+						collapseSidebar()
+						// toggleArrow()
+					}}
+					icon={<ArrowRight />}>
+					<div style={{ maxWidth: '80%' }}>
+						<img src={process.env.REACT_APP_SITE_LOGO} alt='' />
+					</div>
+
+					<ArrowRight />
+				</MenuItem>
+				<MenuItem component={<Link to='/calendar' />}> Calendar</MenuItem>
+				<MenuItem component={<Link to='/e-commerce' />}> E-commerce</MenuItem>
 				<SubMenu label='Charts'>
 					<MenuItem> Pie charts </MenuItem>
 					<MenuItem> Line charts </MenuItem>

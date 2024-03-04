@@ -8,5 +8,7 @@ react-table - https://www.freakyjolly.com/react-table-tutorial/
 
 - npm install -D tailwindcss 
 
-- npm install react-router-dom react-pro-sidebar  dotenv 
+- npm install react-router-dom react-pro-sidebar  @heroicons/react
 - npx tailwindcss init
+
+https://blog.logrocket.com/creating-responsive-sidebar-react-pro-sidebar-mui/
