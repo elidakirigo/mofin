@@ -15,9 +15,9 @@ export default function SidebarComponent() {
 		<Sidebar
 			style={{ height: '100vh', backgroundColor: 'red' }}
 			rootStyles={{
-				[`.${sidebarClasses.container}`]: {
-					backgroundColor: 'red',
-				},
+				// [`.${sidebarClasses.container}`]: {
+				// 	backgroundColor: 'red',
+				// },
 			}}>
 			<Menu
 				menuItemStyles={{
