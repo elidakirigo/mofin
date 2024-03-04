@@ -14,3 +14,11 @@ react-table - https://www.freakyjolly.com/react-table-tutorial/
 https://blog.logrocket.com/creating-responsive-sidebar-react-pro-sidebar-mui/
 
 netlify admin - https://app.netlify.com/sites/mofin-react/overview
+
+tailwind cheatsheet - https://tailwindcomponents.com/cheatsheet/
+
+notion file - https://mustfintech.notion.site/Find-React-Developer-v1-1-0-4fb9af8b6a254da2bfdf0042851f89a7#4dbd5c30d302473f92189fbd3199a545
+
+router documentation - https://www.digitalocean.com/community/tutorials/how-to-handle-routing-in-react-apps-with-react-router
+
+site demo - https://main.d3kaistnyhy60t.amplifyapp.com/dashboard/member-management

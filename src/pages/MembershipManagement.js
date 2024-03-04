@@ -1,8 +1,10 @@
+import Dashboard from './dashboard'
 
 export default function MembershipManagement() {
-  return (
-	<div>
-	  
-	</div>
-  )
+	return (
+		<>
+			<Dashboard />
+			<div>member-management</div>
+		</>
+	)
 }

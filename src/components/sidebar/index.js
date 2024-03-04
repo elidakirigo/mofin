@@ -1,6 +1,7 @@
 import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sidebar'
 import { Link } from 'react-router-dom'
 import ArrowRight from '../svg/arrowRight'
+import Logo from '../logo'
 // import { useState } from 'react'
 
 export default function SidebarComponent() {
@@ -41,7 +42,7 @@ export default function SidebarComponent() {
 					}}
 					icon={<ArrowRight />}>
 					<div style={{ maxWidth: '80%' }}>
-						<img src={process.env.REACT_APP_SITE_LOGO} alt='' />
+						<Logo/>
 					</div>
 
 					<ArrowRight />
