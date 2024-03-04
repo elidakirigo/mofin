@@ -1,15 +1,13 @@
 import { Sidebar, Menu, MenuItem, SubMenu, useProSidebar } from 'react-pro-sidebar'
 import { Link } from 'react-router-dom'
-import ArrowLeft from '../svg/arrowLeft'
 import ArrowRight from '../svg/arrowRight'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 export default function SidebarComponent() {
 	const { collapseSidebar } = useProSidebar()
-	// return <div id='app' style={({ height: '100vh' }, { display: 'flex' })}></div>
-	const [arrowToggle, setArrowToggle] = useState(false)
+	// const [arrowToggle, setArrowToggle] = useState(false)
 
-	const toggleArrow = () => {}
+	// const toggleArrow = () => {}
 
 	return (
 		<Sidebar

@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Dashboard from './pages/dashboard'
 
@@ -17,4 +17,3 @@ function App() {
 }
 
 export default App
-
