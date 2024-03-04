@@ -12,3 +12,5 @@ react-table - https://www.freakyjolly.com/react-table-tutorial/
 - npx tailwindcss init
 
 https://blog.logrocket.com/creating-responsive-sidebar-react-pro-sidebar-mui/
+
+netlify admin - https://app.netlify.com/sites/mofin-react/overview
