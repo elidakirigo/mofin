@@ -15,7 +15,7 @@ const DebouncedInput = ({ value: initialValue, debounce = 500, onChange, ...prop
 		return () => clearTimeout(timeout)
 	}, [value])
 
-	return <input {...props} value={value} onChange={(e) => setValue(e.target.value)} />
+	return <input {...props} value={value} onChange={(e) => setValue(e.target.value)} className='text-black outline-none border-b-2 border-black'/>
 }
 
 export default DebouncedInput

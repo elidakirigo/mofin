@@ -10,17 +10,27 @@ import RecievablesManagement from './pages/RecievablesManagement'
 import TaxManagement from './pages/TaxManagement'
 import PaymentManagement from './pages/PaymentManagement'
 import ChangeHistory from './pages/ChangeHistory'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Exhibition from './pages/Exhibition'
 
 function App() {
-	const [user] = useState(true)
+	const [user, setUser] = useState(false)
+
+	useEffect(() => {
+		 setTimeout(() => {
+			setUser(true)
+		}, 10000)
+
+		console.log(user);
+
+		return clearTimeout()
+	}, [])
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path='/login' element={user ? <Navigate to='/membershipManagement' /> : <Login />}></Route>
 				<Route path='/' element={!user ? <Navigate to='/login' /> : <Dashboard />}>
-					<Route path={`${/membershipManagement || / ? <MembershipManagement /> : <Dashboard />}`} element={<MembershipManagement />}></Route>
+					<Route path='/membershipManagement' element={<MembershipManagement />}></Route>
 					<Route path='/businessManagement' element={<BusinessManagement />}></Route>
 					<Route path='/fundingManagement' element={<FundingManagement />}></Route>
 					<Route path='/investmentManagement' element={<InvestmentManagement />}></Route>

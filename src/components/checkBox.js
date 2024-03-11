@@ -1,14 +1,10 @@
-const CheckBox = ({ content ,isChecked,onChange,i}) => {
+const CheckBox = ({ content, checked, onChange, id }) => {
 	return (
-		<div className='checkbox-wrapper-46' key={i}>
-			<input className='inp-cbx' id={`${content} 'cbx-46'`} type='checkbox' checked={isChecked} onChange={onChange}/>
-			<label className='cbx' for={content}>
-				<span>
-					<svg width='12px' height='10px' viewbox='0 0 12 10'>
-						<polyline points='1.5 6 4.5 9 10.5 1'></polyline>
-					</svg>
-				</span>
-				<span>{content}</span>
+		<div className='checkbox-wrapper-42'>
+			<input id={`${content}`} type='checkbox' checked={checked} onChange={onChange}/>
+			<label className='cbx' htmlFor={content}></label>
+			<label className='lbl' htmlFor={content}>
+				{content}
 			</label>
 		</div>
 	)

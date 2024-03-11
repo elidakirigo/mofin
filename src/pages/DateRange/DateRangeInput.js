@@ -10,7 +10,7 @@ const DateRangeInput = () => {
 	return <RangePicker 
 	// onChange={(value) => 
 	// 	setDates(value.map((item) => moment(item).format('DD-MM-YYYY')))} 
-	className=' p-3 flex-grow' />
+	className=' md:p-3 flex-grow  ' />
 }
 
 export default DateRangeInput

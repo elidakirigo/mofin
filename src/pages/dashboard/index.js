@@ -5,13 +5,12 @@ import { Outlet } from 'react-router-dom'
 export default function Dashboard() {
 	return (
 		<>
-			<Header />
+			<Header /> 
 			<div className='flex'>
 				<SidebarComponent />
-				<div className='m-5 w-full'>
-						<Outlet />
+				<div className='pl-2  w-full mt-32'>
+					<Outlet />
 				</div>
-				
 			</div>
 		</>
 	)
