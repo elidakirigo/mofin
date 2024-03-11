@@ -16,11 +16,9 @@ import System from '../svg/System'
 
 export default function SidebarComponent() {
 	const { collapseSidebar } = useProSidebar()
-	const [isCollapsed, setIsCollapsed] = useState(false)
+	// const [isCollapsed, setIsCollapsed] = useState(false)
 
-	// const [arrowToggle, setArrowToggle] = useState(false)
-
-	console.log()
+	// const [arrowToggle, setArrowToggle] = useState(false) 
 
 	// const toggleArrow = () => {}
 
@@ -40,7 +38,6 @@ export default function SidebarComponent() {
 						width: '300px !important',
 					},
 					' .ps-sidebar-container': {
-						backgroundColor: 'transparent !important',
 						backgroundColor: 'white !important',
 						color: '#2a3958 !important',
 					},

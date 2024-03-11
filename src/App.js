@@ -19,9 +19,7 @@ function App() {
 	useEffect(() => {
 	const mytimer=	 setTimeout(() => {
 			setUser(true)
-		}, 10000)
-
-		console.log(user);
+		}, 10000) 
 
 		return ()=>clearTimeout(mytimer)
 	}, [])

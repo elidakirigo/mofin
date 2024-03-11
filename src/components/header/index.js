@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Input from '../Input'
 import Logo from '../logo'
 import BellIcon from '../svg/BellIcon'
 import CogIcon from '../svg/CogIcon'
