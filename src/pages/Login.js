@@ -1,17 +1,13 @@
-import { useEffect, useState } from 'react'
+import {  useState } from 'react'
 import Logo from '../components/logo'
 import { Link, useNavigate } from 'react-router-dom'
 
-let GlobalUser = ''
 
 export default function Login() {
 	const [login, setLogin] = useState({ name: '', password: '' })
 	const [status, setStatus] = useState(false)
 	  const navigate = useNavigate() 
 
-	useEffect(() => {
-		GlobalUser = login
-	}, [login])
 	return (
 		<>
 			{/* <Header /> */}

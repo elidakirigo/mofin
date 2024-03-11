@@ -17,13 +17,13 @@ function App() {
 	const [user, setUser] = useState(false)
 
 	useEffect(() => {
-		 setTimeout(() => {
+	const mytimer=	 setTimeout(() => {
 			setUser(true)
 		}, 10000)
 
 		console.log(user);
 
-		return clearTimeout()
+		return ()=>clearTimeout(mytimer)
 	}, [])
 	return (
 		<BrowserRouter>

@@ -71,7 +71,7 @@ const TanStackTable = () => {
 			<div className='flex flex-wrap  gap-2 justify-between items-center mb-3'>
 				<div className='md:w-1/2 flex  items-center gap-1'>
 					<SearchIcon />
-					<DebouncedInput value={globalFilter ?? ''} onChange={(value) => setGlobalFilter(String(value))} className='p-2 bg-transparent outline-none border-b-2 w-[100%] flex-grow flex-wrap md:w-2/3 md:focus:w-full duration-300 border-[#2a3958]' placeholder='Search all columns' />
+					<DebouncedInput value={globalFilter ?? ''} onChange={(value) => setGlobalFilter(String(value))} className='p-2 bg-transparent outline-none border-b-2 w-[100%] flex-grow flex-wrap md:w-2/3 md:focus:w-full duration-300 border-[#2a3958]' placeholder='Search all columns' debounce={500}/>
 				</div>
 
 				<DownloadBtn data={data} fileName={'Users'} disabled={!table.getRowModel().rows.length} />

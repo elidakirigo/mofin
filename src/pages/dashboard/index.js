@@ -8,7 +8,7 @@ export default function Dashboard() {
 			<Header /> 
 			<div className='flex'>
 				<SidebarComponent />
-				<div className='pl-2  w-full mt-32'>
+				<div className='p-5  w-full mt-32 overflow-x-hidden'>
 					<Outlet />
 				</div>
 			</div>
