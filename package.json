@@ -11,6 +11,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.15.1",
+    "cypress": "^13.7.0",
     "date-fns": "^3.3.1",
     "dotenv": "^16.4.5",
     "moment": "^2.30.1",
